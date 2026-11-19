@@ -1,13 +1,20 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "student-management-system";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "root";
+$dbname = "schoolnew";
+
+// Create database connection
+$conn = new mysqli(
+    $servername,
+    $username,
+    $password,
+    $dbname
+);
+
 // Check connection
 if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
